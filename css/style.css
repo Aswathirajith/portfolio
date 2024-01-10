@@ -2899,6 +2899,10 @@ fieldset:disabled a.btn {
   background-color: #343a40;
   border-color: #343a40;
 }
+.profile_img{
+  width: 400px;
+  height: 400px;
+}
 
 .btn-outline-dark:focus, .btn-outline-dark.focus {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
