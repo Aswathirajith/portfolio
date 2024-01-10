@@ -115,3 +115,30 @@
     
 })(jQuery);
 
+$(document).ready(function(){
+    $("#signup-form").validate({
+         rules:{
+            name:{
+                required:true,
+                minlength:4
+            },
+            emailad:
+            {
+                required:true,
+                email:true
+            },
+            subject:
+            {
+                required:true,
+                minlength:4
+            },
+            messages:
+            {
+               required:true,
+               minlength:10 
+            }
+
+         }
+    })
+})   
+

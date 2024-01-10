@@ -297,7 +297,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                <div class="col-lg-4 col-md-6  portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100 h-50" src="img/portfolio-6.jpg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -323,45 +323,21 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="contact-form text-center">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate" action="https://script.google.com/macros/s/AKfycbyGjAkbM4RLztlmMRz76GCqpasgsaUftWfimQZCeuFcJ_5D1hVdKlSrZeviq_SMPNHO/exec">
-                            
-                            <div class="form-row">
-                                <div class="control-group col-sm-6">
-                                
-                                    
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
-                                        required="required" data-validation-required-message="Please enter your name" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group col-sm-6">
-                                
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
-                                        required="required" data-validation-required-message="Please enter your email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                            
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                
-                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
-                                    Message</button>
-                            </div>
+                   <div>
+                        <form action="https://api.web3forms.com/submit" method="POST" class="d-flex flex-column" id="signup-form">
+                            <input type="hidden" name="access_key" value="e5068b8c-e0f6-4492-893e-d262d7926159">
+                            <input type="text" name="name" placeholder="Name"  class="py-3 rounded">
+                            <br>
+                            <input type="email"  name="emailad" placeholder="Email" class="py-3 rounded">
+                            <br>
+                            <input type="text" name="subject" placeholder="Subject" class="py-3 rounded">
+                            <br>
+                            <textarea name="messages" id="" cols="30"  rows="10" placeholder="Message" class="rounded"></textarea>
+                            <br>
+                            <button type="submit" class="btn btn-outline-success">Success</button>
                         </form>
-                    </div>
+                    </div> 
+
                 </div>
             </div>
         </div>
@@ -401,7 +377,9 @@
 
 
     <!-- JavaScript Libraries -->
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/typed/typed.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
